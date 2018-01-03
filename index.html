@@ -3,17 +3,16 @@
   <head>
     <title>Jackie Wong</title>
   </head>
-  <body>
-    <button onclick="typeWriter()">Click me</button>
+  <body onload="typeWriter()">
     <p id="demo"></p>
-
+    <h1 id ="tag">Hi, my name is Jackie.</h1>
     <script>
     var i = 0;
-    var txt = 'Hi my name is Jackie.';
+//     var txt = 'Hi, my name is Jackie.';
     var speed = 40;
 
     function typeWriter() {
-      if (i < txt.length) {
+      if (i < document.getElementById("tag").length) {
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
@@ -21,7 +20,7 @@
     }
     </script>
 
-    <h1>Hi, my name's Jackie.</h1>
+    
     <img src="profile.jpg">
   </body>
 </html>
