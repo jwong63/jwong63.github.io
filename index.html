@@ -8,11 +8,11 @@
     <h1 id ="tag">Hi, my name is Jackie.</h1>
     <script>
     var i = 0;
-//     var txt = 'Hi, my name is Jackie.';
+    var txt = document.getElementById("tag");
     var speed = 40;
 
     function typeWriter() {
-      if (i < document.getElementById("tag").length) {
+      if (i < txt.length) {
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
