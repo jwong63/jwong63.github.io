@@ -3,24 +3,7 @@
   <head>
     <title>Jackie Wong</title>
   </head>
-  <body onload="typeWriter()">
-    <p id="demo"></p>
-    <h1 id ="tag">Hi, my name is Jackie.</h1>
-    <script>
-    var i = 0;
-    var txt = document.getElementById("tag");
-    var speed = 40;
-
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-    </script>
-
-    
-    <img src="profile.jpg">
+  <body>
+    <img src="profile.jpg" alt = "Jackie Wong on her laptop">
   </body>
 </html>
